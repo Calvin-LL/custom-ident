@@ -14,14 +14,25 @@ export class CustomIdentError extends Error {
  * Turns a list of values into a CSS <custom-ident>.
  * Escapes invalid characters.
  *
- * @warning Spaces are mapped to hyphens.
+ * @warning Spaces are mapped to `_`s.
  *
  * @example
  * ```ts
  * import { customIdent } from "custom-ident";
  *
- * const result = customIdent("my", "custom", "ident");
- * console.log(result); // "my-custom-ident"
+ * const ident = customIdent("foo", "bar", "baz@");
+ * console.log(ident); // 'foo_bar_baz\\40'
+ *
+ * const ident = customIdent([
+ *   undefined,
+ *   null,
+ *   true,
+ *   false,
+ *   3,
+ *   { test: "hi", oof: 0 },
+ * ]);
+ * console.log(ident); // 'undefined_null_true_false_3_test'
+ * ```
  *
  * @param args - The values to be concatenated into a custom-ident.
  * @returns A string representing the custom-ident.

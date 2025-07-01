@@ -19,7 +19,7 @@ npm install custom-ident
 ```js
 import { customIdent } from "custom-ident";
 
-const ident = customIdent(["foo", "bar", "baz@"]);
+const ident = customIdent("foo", "bar", "baz@");
 console.log(ident); // 'foo_bar_baz\\40'
 ```
 
