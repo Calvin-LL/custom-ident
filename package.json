@@ -1,6 +1,6 @@
 {
   "name": "custom-ident",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate css `<custom-ident>`s",
   "keywords": [
     "css",
