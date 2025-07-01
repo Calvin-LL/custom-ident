@@ -1,0 +1,31 @@
+{
+  "name": "custom-ident",
+  "version": "1.0.0",
+  "description": "Generate css `&lt;custom-ident>`s",
+  "homepage": "https://github.com/Calvin-LL/custom-ident#readme",
+  "bugs": {
+    "url": "https://github.com/Calvin-LL/custom-ident/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calvin-LL/custom-ident.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Calvin Liang",
+    "email": "npm@calvin.sh",
+    "url": "https://calvin.sh"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

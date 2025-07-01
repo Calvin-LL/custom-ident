@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "moduleResolution": "node",
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "ES2023",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}
