@@ -2,6 +2,22 @@
   "name": "custom-ident",
   "version": "1.0.0",
   "description": "Generate css `&lt;custom-ident>`s",
+  "keywords": [
+    "css",
+    "custom-ident",
+    "view-transition-name",
+    "animation-name",
+    "will-change",
+    "counter-reset",
+    "counter-increment",
+    "list-style-type",
+    "grid-row-start",
+    "grid-row-end",
+    "grid-column-start",
+    "grid-column-end",
+    "grid-template-rows",
+    "grid-template-columns"
+  ],
   "homepage": "https://github.com/Calvin-LL/custom-ident#readme",
   "bugs": {
     "url": "https://github.com/Calvin-LL/custom-ident/issues"
@@ -17,7 +33,11 @@
     "url": "https://calvin.sh"
   },
   "type": "module",
+  "types": "dist/index.d.ts",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest",
